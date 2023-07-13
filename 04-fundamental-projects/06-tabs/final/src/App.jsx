@@ -1,8 +1,8 @@
-import { useState, useEffect } from 'react';
-import BtnContainer from './BtnContainer';
-import JobInfo from './JobInfo';
+import { useState, useEffect } from "react";
+import BtnContainer from "./BtnContainer";
+import JobInfo from "./JobInfo";
 
-const url = 'https://course-api.com/react-tabs-project';
+const url = "https://course-api.com/react-tabs-project";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -20,13 +20,13 @@ function App() {
   }, []);
   if (loading) {
     return (
-      <section className='jobs-center'>
-        <div className='loading'></div>
+      <section className="jobs-center">
+        <div className="loading"></div>
       </section>
     );
   }
   return (
-    <section className='jobs-center'>
+    <section className="jobs-center">
       {/* btn container */}
       <BtnContainer
         jobs={jobs}
